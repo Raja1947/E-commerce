@@ -1,0 +1,116 @@
+.headphone_container {
+  width: 100%;
+  padding: 2% 8%;
+  margin-bottom: 50px;
+}
+.headphone_title {
+  display: flex;
+  justify-content: space-between;
+}
+.headphone_title h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  max-width: 400px;
+}
+.headphone_title p {
+  max-width: 420px;
+  font-size: 1.1rem;
+  text-align: end;
+}
+.headphone_image {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.headphone_image img {
+  width: 100%;
+}
+.headphone_main {
+  position: relative;
+  margin-top: 50px;
+}
+.headphone_main h2 {
+  position: absolute;
+  right: 30px;
+
+  bottom: 35px;
+  font-size: 2rem;
+  color: #fff;
+}
+.headphone_about {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.headphone_about p {
+  max-width: 420px;
+  font-size: 1.1rem;
+}
+.headphone_about button {
+  width: 150px;
+  height: 55px;
+  padding: 5px 20px;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+}
+
+@media (max-width: 900px) {
+  .headphone_title h1 {
+    font-size: 2rem;
+
+    max-width: 400px;
+  }
+  .headphone_title p {
+    max-width: 300px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .headphone_title {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .headphone_title h1 {
+    max-width: 100%;
+    font-size: 2.5rem;
+  }
+  .headphone_title p {
+    max-width: 100%;
+    text-align: start;
+    font-size: 1.1rem;
+  }
+  .headphone_image {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .headphone_image img {
+    height: 270px;
+  }
+  .headphone_about {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .headphone_about p {
+    max-width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .headphone_title h1 {
+    font-size: 1.9rem;
+  }
+  .headphone_title p {
+    font-size: 1.1rem;
+  }
+  .headphone_main h2{
+    font-size: 1.6rem;
+  }
+  .headphone_about p{
+    max-width: 100%;
+  }
+  .headphone_about button{
+    /* padding:2px 18px; */
+    height: 40px;
+  }
+
+}

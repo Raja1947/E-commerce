@@ -1,0 +1,28 @@
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  margin-top: 65px;
+  height: 250px;
+  color: white;
+}
+.title h1 {
+  font-size: 44px;
+  font-weight: 700;
+}
+.title h6 {
+  font-size: 22px;
+  font-weight: 600;
+}
+@media (max-width: 450px) {
+  .title h1 {
+    font-size: 37px;
+  }
+  .title h6 {
+    font-size: 19px;
+    max-width: 270px;
+  }
+}

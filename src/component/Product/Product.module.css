@@ -1,0 +1,111 @@
+.product_container {
+  width: 100%;
+  padding: 2% 8%;
+  margin: 10px 0px 50px 0px;
+}
+.product_heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.product_details {
+  width: 290px;
+  gap: 10px;
+  border-radius: 5px;
+  background-color: white;
+  margin-top: 30px;
+  text-align: center;
+}
+.product img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.details {
+  padding: 25px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.addCart {
+  display: flex;
+  justify-content: space-around;
+}
+.details h6 {
+  font-size: 1.1rem;
+}
+.details p {
+  color: grey;
+}
+.addCart {
+  margin-top: 8px;
+}
+.addCart p {
+  font-size: 1rem;
+  color: rgb(27, 120, 227);
+}
+.addCart button {
+  width: fit-content;
+  background-color: transparent;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  border-radius: 15px;
+  outline: none;
+}
+.addCart button:hover {
+  background-color: rgb(98, 166, 244);
+  color: rgb(98, 166, 244);
+  border: 1px solid rgb(98, 166, 244);
+  color: white;
+  transition: 0.5s;
+}
+.sortSection {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.sortSection p {
+  margin-right: 10px;
+  font-size: 1rem;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: black;
+}
+.dropdown {
+  width: 200px;
+  margin-top: 10px;
+  position: absolute;
+  top: 100%;
+  right: 0%;
+}
+
+.dropdown ul {
+  list-style: none;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown ul li {
+  position: relative;
+  display: inline-block;
+  padding: 8px 1px;
+  cursor: pointer;
+  transition: background-size 0.3s ease-in-out;
+  background: linear-gradient(to right, currentColor, currentColor) 0 100% / 0
+    1px no-repeat;
+}
+
+.dropdown ul li:hover {
+  background-size: 100% 0.5px;
+}
