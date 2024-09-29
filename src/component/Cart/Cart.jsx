@@ -30,7 +30,7 @@ function Cart() {
       </div>
       <div className={style.cart}>
         <div className={style.cartLeft}>
-          <table>
+          <table className={style.table}>
             <thead>
               <tr>
                 <th>Product</th>
@@ -78,14 +78,36 @@ function Cart() {
           </table>
         </div>
         <div className={style.cartRight}>
-          <h3>
-            Total Amount: ₹
-            {cart.reduce(
-              (total, item, index) => total + item.price * quantities[index],
-              0
-            )}
-          </h3>
-          <button>Checkout</button>
+          <h3>Total Items : {} </h3>
+          <table className={style.check_table}>
+            <tr>
+              <th>Subtotal</th>
+              <td>
+                {" "}
+                {cart.reduce(
+                  (total, item, index) =>
+                    total + item.price * quantities[index],
+                  0
+                )}
+              </td>
+            </tr>
+            <tr>
+              <th>Delivery</th>
+              <td>free</td>
+            </tr>
+            <tr>
+              <th>Total Amount</th>
+              <td>
+                {" "}
+                {cart.reduce(
+                  (total, item, index) =>
+                    total + item.price * quantities[index],
+                  0
+                )}
+              </td>
+            </tr>
+          </table>
+          <button className={style.checkout}>Checkout</button>
         </div>
       </div>
     </div>

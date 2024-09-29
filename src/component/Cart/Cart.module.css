@@ -1,6 +1,7 @@
 .cart_container{
     width: 100%;
     padding: 2% 8%;
+    margin-top: 70px;
 }
 .cart_header{
     display: flex;
@@ -26,8 +27,9 @@
 .cartRight{
     flex-basis: 30%;
     /* background: green; */
+    /* width: 100%; */
 }
-table {
+.table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
@@ -61,5 +63,17 @@ table {
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc; 
   }
+  .checkout{
+    background: rgb(255, 151, 81);
+    padding: 7px 15px;
+    border: 1px solid rgb(255, 151, 81);
+    outline: none;
+    font-size: 1rem;
+    color: white;
+    width: 100%;
   
+  }
+  .check_table{
+    width: 100%;
+  } 
 
